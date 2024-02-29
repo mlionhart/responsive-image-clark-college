@@ -1,0 +1,141 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+:root {
+    --heading_font: font-family: 'Libre Baskerville', serif;
+    --dark: #810909; 
+    --special: #1e3cbe;
+    --light: #c5e3f7;
+    --commonBorder: 2px solid black;
+    --commonSize: 2.0rem;
+}
+
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    color: #333333;
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+header {
+    border: var(--commonBorder);
+    border-radius: 1em;
+    background-color: var(--special);
+    padding: 10px 30px;
+    font-size: .8em;
+    color: white;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+h1 {
+    Text-align: center;
+    font-family: var(--heading_font);
+}
+
+h2 {
+    font-family: var(--heading_font);
+    color: var(--dark);
+}
+
+p {
+    font-family: 'Slabo 27px', serif;
+}
+
+img {
+    margin-top: 1em;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+a:link, a:visited, a:focus, a:active {
+    text-decoration: none;
+    font-weight: 800;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--special);
+    color: white;
+    padding: 10px;
+    border: var(--commonBorder);
+    border-radius: .5em;
+    margin-bottom: .7em;
+}
+
+/* Media queries */
+
+/* Small devices (576px and up) */
+
+@media (min-width: 576px) {
+    p {
+        font-size: 1.15rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (768px and up) */
+
+@media (min-width: 768px) {
+    p {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.35rem;
+        padding: 1.0rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Large devices (992px and up) */
+
+@media (min-width: 992px) {
+    p {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: var(--commonSize);
+    }
+}
+
+/* Extra large devices (1200px and up) */
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 1.75rem;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: var(--commonSize);
+    }
+} 
